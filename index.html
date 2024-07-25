@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чек-листы по охране труда</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Чек-листы по охране труда</h1>
+  <form id="checklist-form">
+    <label for="title">Название чек-листа:</label>
+    <input type="text" id="title">
+    <br>
+    <label for="description">Описание:</label>
+    <textarea id="description"></textarea>
+    <br>
+    <label for="items">Пункты проверки:</label>
+    <ul id="items">
+      <li>
+        <input type="text" placeholder="Пункт 1">
+        <input type="file" accept="image/*">
+      </li>
+    </ul>
+    <button type="button" id="add-item-btn">Добавить пункт</button>
+    <br>
+    <button type="submit">Создать чек-лист</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
